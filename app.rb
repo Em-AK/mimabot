@@ -1,25 +1,24 @@
-require "sinatra"
 require "mailman"
 require "pry"
+require "dotenv"
+require "active_record"
 require "./models.rb"
 
-# IMAP polling configuration
+Dotenv.load
+
 Mailman.config.imap = {
-  server: '...',
+  server: ENV['server'],
   port: 143,
-  username: '...',
-  password: '...',
+  username: ENV['username'],
+  password: ENV['password'],
   ssl: false
 }
-Mailman.config.poll_interval = 20
+
+Mailman.config.poll_interval = 2
 
 # run the app
 Mailman::Application.run do
-  to 'mm@bepos.be' do
-    post = Post.new(message)
-    post.fragments.each do |fragment|
-      puts "#{fragment}\n"
-    end
-  end
+  to 'mm@bepos.be', Post
 end
+
 

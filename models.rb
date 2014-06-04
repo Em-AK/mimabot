@@ -1,15 +1,12 @@
-
-# Change the following to reflect your database settings
-#ActiveRecord::Base.establish_connection(
-#  adapter:  'sqlite3',
-#  host:     'localhost',
-#  database: 'development',
-#)
-
+ActiveRecord::Base.establish_connection(
+  :adapter  => :sqlite3,
+  :database => 'development.sqlite3'
+)
 
 class Post
   def receive(message, params)
     @message = message  
+    self.fragments
   end
 
   def content
@@ -32,19 +29,18 @@ class Post
     fragments.compact.each do |content|
       f = Fragment.new(content: content, timestamp: self.timestamp)
       f.extract_tags
-    binding.pry
+      f.save
     end
   end
 end
 
-class Fragment
-  attr_accessor :timestamp, :content, :tags
-  def initialize(params)
-    @content = params[:content]
-    @timestamp = params[:timestamp]
-  end
+class Fragment < ActiveRecord::Base
 
   def extract_tags
-    self.tags = self.content.scan(/#\w*/)
+    self.tags = self.content.scan(/#\w*/).to_s
+  end
+
+  def show
+    @fragment = Fragment.all 
   end
 end
