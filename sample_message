@@ -1,0 +1,73 @@
+Return-Path: <emilien.ak@gmail.com>
+Received: by mail.legtux.org (Postfix, from userid 65534) id 19AE859C1282; Fri, 30 May 2014 11:30:45 +0200
+Received: from mo53.mail-out.ovh.net (6.mo53.mail-out.ovh.net [46.105.58.122]) by mail.legtux.org (Postfix) with ESMTP id A39F959C1282 for <4a@legtux.org>; Fri, 30 May 2014 11:30:43 +0200
+Received: from mail212.ha.ovh.net (gw6.ovh.net [213.251.189.206]) by mo53.mail-out.ovh.net (Postfix) with SMTP id 62F20FF9DDE for <4a@legtux.org>; Fri, 30 May 2014 11:30:43 +0200
+Received: from b0.ovh.net (HELO queueout) (213.186.33.50) by b0.ovh.net with SMTP; Fri, 30 May 2014 11:30:43 +0200
+Received: from b0.ovh.net (HELO queue) (213.186.33.50) by b0.ovh.net with SMTP; Fri, 30 May 2014 11:30:42 +0200
+Received: from mail-wi0-f171.google.com (209.85.212.171) by mx1.ovh.net with SMTP; Fri, 30 May 2014 11:30:40 +0200
+Received: by mail-wi0-f171.google.com with SMTP id cc10so744933wib.16 for <mm@bepos.be>; Fri, 30 May 2014 02:30:40 -0700
+Received: by 10.216.59.199 with HTTP; Fri, 30 May 2014 02:30:20 -0700
+Date: Fri, 30 May 2014 11:30:20 +0200
+From: Emilien AH-KIEM <emilien.ak@gmail.com>
+To: mm <mm@bepos.be>
+Message-ID: <CAKEjWNSX=PwdTSGKCpjSohav84ptB2a+so3OgSzwNW6r1xT28A@mail.gmail.com>
+Subject:
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=047d7bb03af2ec998304fa9ab2e6;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: 4a@legtux.org
+Delivered-To: bepos.be-mm@bepos.be
+X-Spam-Checker-Version: SpamAssassin 3.3.1 (2010-03-16) on legtux-1
+X-Spam-Level:
+X-Spam-Status: No, score=0.0 required=4.5 tests=FREEMAIL_FROM,HTML_MESSAGE,
+ T_DKIM_INVALID autolearn=unavailable version=3.3.1
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:from:date:message-id:subject:to:content-type;
+ bh=IeYDPQJnlhxsqAQ8hBEkKt/fldHBm6aFJyuRG7BwprA=;
+ b=X1jS4RllmDD+wHPCbCQbhk+76+3zenIJcXvUJHAJYJFb5XDStN64v1nq3ToAkdaEfD
+ v7YR2S2nHHLLHvUw585YTa5KONcBfzyi8l2XhvgYhIGjvi9IgVcsg4oKCATlDoOHPX4R
+ c+ugNe+fF09xI6Tl8mTZCVegkpjEv8u/KwzhfvBsiRMUmaamAAkuu6W9KLfT0dr1mBw6
+ ltALSYe7vPClitRwjtChWbJ8Mevd5OEg2MGaQIDom8ajtNwi/ho0q+Yb6Fu+eKSV9ght
+ TLhGfh04CbyOGSd+zj0sOSR3hldeJAeNgHPBngw4rCihMSJp9gw7VaM9I0pBMUM0PX4/ tn7g==
+X-Received: by 10.194.205.8 with SMTP id lc8mr19601188wjc.81.1401442240598;
+ Fri, 30 May 2014 02:30:40 -0700 (PDT)
+X-Ovh-Tracer-Id: 5746593125374227689
+X-Ovh-Remote: 209.85.212.171 (mail-wi0-f171.google.com)
+X-Ovh-Local: 213.186.33.29 (mx1.ovh.net)
+X-OVH-SPAMSTATE: OK
+X-OVH-SPAMSCORE: 10
+X-OVH-SPAMCAUSE: gggruggvucftvghtrhhoucdtuddrfeejvddrieehucetufdoteggodetrfcurfhrohhfihhlvgemucfqggfjnecuuegrihhlohhuthemuceftddtnecugfhmphhthicushhusghjvggtthculddutddm
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 10
+X-VR-SPAMCAUSE: gggruggvucftvghtrhhoucdtuddrfeejvddrieehucetufdoteggodetrfcurfhrohhfihhlvgemucfqggfjnecuuegrihhlohhuthemuceftddtnecugfhmphhthicushhusghjvggtthculddutddm
+
+
+--047d7bb03af2ec998304fa9ab2e6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+#manual #minitest
+http://docs.seattlerb.org/minitest/
+
+   
+  
+#oss #webmail #encryption #tag @iceland
+#mailpile
+https://www.mailpile.is/
+******
+made by the guys behind #pagekite
+
+--047d7bb03af2ec998304fa9ab2e6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><div><div><div>#manual #minitest<br></div><a href="http://docs.seattlerb.org/minitest/" target="_blank">http://docs.seattlerb.org/minitest/</a><br><br></div>#oss #webmail #encryption #tag @iceland<br></div>#mailpile<br>
+
+
+<div><a href="https://www.mailpile.is/" target="_blank">https://www.mailpile.is/</a><br>******<br></div>made by the guys behind #pagekite</div>
+
+--047d7bb03af2ec998304fa9ab2e6--
