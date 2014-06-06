@@ -1,3 +1,5 @@
+require "active_record"
+
 ActiveRecord::Base.establish_connection(
   :adapter  => :sqlite3,
   :database => 'development.sqlite3'
@@ -6,6 +8,7 @@ ActiveRecord::Base.establish_connection(
 class Post
   def receive(message, params)
     @message = message  
+    @sender = message.from[0]
     self.fragments
   end
 
@@ -27,7 +30,7 @@ class Post
       end
     end
     fragments.compact.each do |content|
-      f = Fragment.new(content: content, timestamp: self.timestamp)
+      f = Fragment.new(content: content, timestamp: self.timestamp, sender: @sender)
       f.extract_tags
       f.save
     end
@@ -39,8 +42,21 @@ class Fragment < ActiveRecord::Base
   def extract_tags
     self.tags = self.content.scan(/#\w*/).to_s
   end
-
-  def show
-    @fragment = Fragment.all 
+  
+  def extract_places
+    self.places = self.content.scan(/@\w*/).to_s
   end
+  
+  def extract_authors
+    self.authors = self.content.scan(/<\w*/).to_s
+  end
+ 
+  def extract_recipients
+    self.recipients = self.content.scan(/>\w*/).to_s
+  end
+
+  def extract_people
+    self.people = self.content.scan(/\+\w*/).to_s
+  end
+  
 end

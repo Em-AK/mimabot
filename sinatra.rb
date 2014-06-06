@@ -10,7 +10,9 @@ ActiveRecord::Base.establish_connection(
 class Fragment < ActiveRecord::Base
 end
 
+settings.root = `pwd`.strip  
+set :haml, :format => :html5
 get '/' do
-  binding.pry
-  Fragment.all.map {|t| t.content}
+  @fragments = Fragment.all
+  haml :index
 end

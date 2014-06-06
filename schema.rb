@@ -10,5 +10,8 @@ ActiveRecord::Schema.define do
     t.column :content, :text
     t.column :timestamp, :datetime
     t.column :tags, :string
+    t.column :sender, :string
   end
+ 
 end
+
