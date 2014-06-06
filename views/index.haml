@@ -1,0 +1,14 @@
+!!!
+%h1 Fragments
+
+-@fragments.each do |f|
+  %h3 
+    =f.tags
+  %p=f.content
+  %br
+  %p
+    =f.timestamp.strftime("Posted on %d.%m at %H:%M")
+    ="by #{f.sender}"
+  %br
+  %hr
+  %br

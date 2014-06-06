@@ -1,7 +1,6 @@
 require "mailman"
 require "pry"
 require "dotenv"
-require "active_record"
 require "./models.rb"
 
 Dotenv.load
